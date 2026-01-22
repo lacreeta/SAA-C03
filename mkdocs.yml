@@ -122,7 +122,7 @@ nav:
       - S3: 01-core/s3.md
 
   - Networking:
-      - VPC Basics: 02-networking/vpc-basics.md
+      - VPC Basics: 02-networking/vpc.md
       - Routing, NAT & IGW: 02-networking/routing-nat-igw.md
       - VPC Endpoints: 02-networking/endpoints.md
       - VPC Peering: 02-networking/peering.md
