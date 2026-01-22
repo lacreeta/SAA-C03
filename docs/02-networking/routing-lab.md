@@ -14,7 +14,7 @@ Comencé analizando la **VPC por defecto** y sus subnets:
 
 - La VPC tenía **3 subnets**, todas ellas **públicas**
 - Todas estaban asociadas a una **route table** con la ruta:
-  - 0.0.0.0/0 → Internet Gateway (IGW)
+	- 0.0.0.0/0 → Internet Gateway (IGW)
 - Además, tenían **auto-assign public IPv4 ENABLED**
 
 **Conclusión:**  
@@ -26,7 +26,7 @@ Una subnet es pública **porque su route table tiene una ruta hacia un IGW**, no
 
 - Creé una nueva subnet con **auto-assign public IPv4 DISABLED**
 - A pesar de ello, la subnet seguía siendo pública porque:
-  - Estaba asociada a la **route table por defecto**, que tenía `0.0.0.0/0 → IGW`
+	- Estaba asociada a la **route table por defecto**, que tenía `0.0.0.0/0 → IGW`
 
 Para corregirlo:
 
@@ -42,10 +42,10 @@ La subnet pasó a ser **realmente privada**.
 ## Creación y uso de la NAT Gateway
 
 - Creé una **NAT Gateway**:
-  - Ubicada en una **subnet pública**
-  - Asociada a una **Elastic IP**
-  - Actualicé la route table de la subnet privada con: 
-    - 0.0.0.0/0 → NAT Gateway
+	- Ubicada en una **subnet pública**
+	- Asociada a una **Elastic IP**
+	- Actualicé la route table de la subnet privada con: 
+		- 0.0.0.0/0 → NAT Gateway
 
 **Comportamiento esperado:**
 
@@ -65,8 +65,8 @@ La subnet pasó a ser **realmente privada**.
 
 - Utilicé **EC2 Instance Connect Endpoint**
 - Para ello:
-  - Creé el endpoint usando el mismo **Security Group** que la EC2
-  - Modifiqué la **Inbound Rule de SSH** para permitir acceso
+	- Creé el endpoint usando el mismo **Security Group** que la EC2
+	- Modifiqué la **Inbound Rule de SSH** para permitir acceso
 
 Finalmente:
 
