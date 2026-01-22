@@ -89,7 +89,7 @@ Opciones habituales:
 
 El laboratorio completo con pruebas reales de routing, IGW y NAT Gateway se encuentra en:
 
-- `routing-nat-igw-lab.md`
+- 👉 [Laboratorio](routing-lab.md)
 
 Incluye:
 - Creación de subnets públicas y privadas
