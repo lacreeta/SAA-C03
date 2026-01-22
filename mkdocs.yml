@@ -1,0 +1,162 @@
+site_name: AWS Solutions Architect Associate
+site_description: Apuntes y guía práctica para la certificación AWS Solutions Architect Associate (SAA-C03)
+site_author: Andrés González
+site_url: https://github.com/lacreeta/SAA-C03
+
+repo_name: lacreeta/SAA-C03
+repo_url: https://github.com/lacreeta/SAA-C03
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: es
+
+  icon:
+    logo: material/cloud
+    repo: fontawesome/brands/github
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+plugins:
+  - search:
+      lang: es
+  - glightbox
+  - minify:
+      minify_html: true
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  generator: false
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lacreeta
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/andres-gonzalez-a53bb929a/
+      name: LinkedIn
+
+copyright: >
+  Copyright &copy; 2026 Andrés González
+
+nav:
+  - Inicio: index.md
+
+  - Setup:
+      - Cuenta y Billing: 00-setup/cuenta-y-billing.md
+      - Free Tier y Costes: 00-setup/free-tier-y-costes.md
+
+  - Core:
+      - IAM: 01-core/iam.md
+      - EC2: 01-core/ec2.md
+      - Elastic Load Balancing: 01-core/elb.md
+      - S3: 01-core/s3.md
+
+  - Networking:
+      - VPC Basics: 02-networking/vpc-basics.md
+      - Routing, NAT & IGW: 02-networking/routing-nat-igw.md
+      - VPC Endpoints: 02-networking/endpoints.md
+      - VPC Peering: 02-networking/peering.md
+      - Transit Gateway: 02-networking/transit-gateway.md
+
+  - Storage & Databases:
+      - RDS: 03-storage-databases/rds.md
+      - Aurora: 03-storage-databases/aurora.md
+      - DynamoDB: 03-storage-databases/dynamodb.md
+      - EFS & FSx: 03-storage-databases/efs-fsx.md
+
+  - High Availability & DR:
+      - Route 53: 04-ha-dr/route53.md
+      - Alta Disponibilidad: 04-ha-dr/high-availability.md
+      - Disaster Recovery: 04-ha-dr/dr-strategies.md
+
+  - Serverless & Integration:
+      - Lambda: 05-serverless-integration/lambda.md
+      - API Gateway: 05-serverless-integration/api-gateway.md
+      - SQS: 05-serverless-integration/sqs.md
+      - SNS: 05-serverless-integration/sns.md
+      - EventBridge: 05-serverless-integration/eventbridge.md
+      - Step Functions: 05-serverless-integration/step-functions.md
+
+  - Security:
+      - Shared Responsibility: 06-security/shared-responsibility.md
+      - KMS: 06-security/kms.md
+      - Arquitectura Segura: 06-security/security-architecture.md
+
+  - Operations:
+      - CloudWatch: 07-operations/cloudwatch.md
+      - CloudFormation: 07-operations/cloudformation.md
+      - Systems Manager: 07-operations/systems-manager.md
+
+  - Examen:
+      - Patrones y Trampas: 99-exam/patrones-y-trampas.md
+      - Checklist Final: 99-exam/checklist-final.md
