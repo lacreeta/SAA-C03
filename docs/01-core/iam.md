@@ -227,3 +227,6 @@ MFA aparece en escenarios de compliance y seguridad.
 * Roles para servicios AWS
 * Deny explícito siempre gana
 * Least privilege siempre es la mejor respuesta
+
+## Laboratorio
+👉 [IAM — Laboratorio](iam-lab.md)
