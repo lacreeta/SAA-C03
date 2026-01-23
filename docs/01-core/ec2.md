@@ -1,7 +1,5 @@
 # EC2
 
-# EC2
-
 ## Para qué sirve
 Instancias de cómputo flexibles para workloads que requieren control total del sistema operativo.
 

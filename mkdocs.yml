@@ -125,6 +125,7 @@ nav:
       - VPC Basics: 02-networking/vpc.md
       - Routing, NAT & IGW: 02-networking/routing-nat-igw.md
       - VPC Endpoints: 02-networking/endpoints.md
+      - Subnets: 02-networking/subnets.md
       - VPC Peering: 02-networking/peering.md
       - Transit Gateway: 02-networking/transit-gateway.md
 
