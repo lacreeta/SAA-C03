@@ -116,8 +116,9 @@ nav:
       - IAM: 01-core/iam.md
       - EC2: 01-core/ec2.md
       - Elastic Load Balancing: 01-core/elb.md
+      - Auto Scaling: 01-core/autoscaling.md
       - S3: 01-core/s3.md
-
+      
   - Networking:
       - VPC Basics: 02-networking/vpc.md
       - Routing, NAT & IGW: 02-networking/routing-nat-igw.md
