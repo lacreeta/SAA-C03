@@ -290,6 +290,8 @@ aws s3 ls         # depende de IAM
 
     Manage private EC2 without internet → SSM + Interface Endpoints + IAM
 
+---
+
 # Lab 4 — Limpieza y arquitectura final
 ## Objetivo
 
@@ -313,6 +315,7 @@ aws s3 ls         # depende de IAM
     * EC2 gestionable por SSM
     * Acceso privado a S3
 
+---
 
 # Lab 5 — Endpoint ≠ Permisos (IAM manda)
 ## Objetivo

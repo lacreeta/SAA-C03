@@ -137,3 +137,7 @@ En arquitectura real y en examen:
 - ¿Multi-AZ? → Subnets duplicadas en ≥2 AZs
 - ¿DB segura? → Private data subnets, sin IGW, acceso solo desde app
 
+---
+
+## Laboratorio
+- 👉 [Subnets - Laboratorio](subnets-lab.md)
