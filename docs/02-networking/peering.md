@@ -135,3 +135,8 @@ Si falla algo → casi siempre es **routing o SG**, no el peering en sí.
 - ¿CIDRs no solapados? → OK
 - ¿Necesitas transitive routing? → ❌ Peering
 - ¿Escala grande / hub central? → Transit Gateway
+
+---
+
+## Laboratorio
+- 👉 [VPC Peering - Laboratorio](peering-lab.md)
