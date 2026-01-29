@@ -95,9 +95,13 @@ El ASG intenta en todo momento mantener el valor de *desired capacity*, respetan
 
 Este laboratorio demuestra que Auto Scaling es responsable de la **gestión de capacidad**, manteniendo el número correcto de instancias EC2 incluso ante fallos, y sienta las bases para su integración posterior con Elastic Load Balancing.
 
+---
+
 ## Replicación Lab 2-ELB
 
 El laboratorio de ELB fue replicado sin guía, confirmando la correcta asimilación de los conceptos de balanceo, target groups y security groups.
+
+--- 
 
 ## ELB + Auto Scaling — Lab 3 (integración completa)
 
