@@ -126,6 +126,8 @@ nav:
       - Subnets: 02-networking/subnets.md
       - VPC Peering: 02-networking/peering.md
       - Transit Gateway: 02-networking/transit-gateway.md
+      - VPN: 02-networking/vpn.md
+      - Direct Connect: 02-networking/direct-connect.md
 
   - Storage & Databases:
       - RDS: 03-storage-databases/rds.md
