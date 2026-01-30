@@ -155,3 +155,5 @@ No confundir con route tables de las subnets.
 - ¿Conectividad on-prem + VPCs? → TGW
 - ¿Arquitectura simple punto a punto? → Peering
 
+## Laboratorio 
+- 👉 [Transit Gateway - Laboratorio](transit-gateway-lab.md)
