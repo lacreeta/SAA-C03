@@ -1,33 +1,19 @@
-# transitgateway-lab.md — Labs de Transit Gateway (Lab 1–3)
+# Labs de Transit Gateway (Lab 1–3)
 
 **Fecha:** 30-01-2026  
-**Contexto:** AWS SAA-C03 (networking / arquitectura)  
 **Objetivo global:** pasar de conectividad simple (2 VPCs) → hub & spoke (3 VPCs) → **segmentación** (quién habla con quién) usando **AWS Transit Gateway (TGW)**.
 
 ---
 
-## Índice
-1. [Modelo mental (antes de tocar nada)](#modelo-mental-antes-de-tocar-nada)
-2. [Pre-requisitos y diseño base](#pre-requisitos-y-diseño-base)
-3. [UI notes 2026: dónde están los Attachments](#ui-notes-2026-dónde-están-los-attachments)
-4. [Lab 1 — TGW mínimo viable (VPC-A ↔ VPC-B)](#lab-1--tgw-mínimo-viable-vpc-a--vpc-b)
-5. [Lab 2 — Hub & Spoke + Bastion (Prod, Dev, Shared)](#lab-2--hub--spoke--bastion-prod-dev-shared)
-6. [Lab 3 — Segmentación con TGW Route Tables (3 RT-TGW)](#lab-3--segmentación-con-tgw-route-tables-3-rt-tgw)
-7. [Troubleshooting real (lo que te pasó y cómo se detecta)](#troubleshooting-real-lo-que-te-pasó-y-cómo-se-detecta)
-8. [Costes y limpieza (para no pagar de más)](#costes-y-limpieza-para-no-pagar-de-más)
-9. [Takeaways de examen SAA-C03](#takeaways-de-examen-saa-c03)
+## Modelo mental
 
----
-
-## Modelo mental (antes de tocar nada)
-
-### Qué es TGW (sin humo)
+### Qué es TGW
 **Transit Gateway = router regional gestionado** que conecta:
 - múltiples VPCs
 - on-prem (VPN / Direct Connect)
 - con **routing transitivo** (transitive routing)
 
-### Dos capas de routing (la clave)
+### Dos capas de routing 
 Para que una VPC hable con otra por TGW necesitas **DOS** cosas:
 
 1) **Route tables de las subnets (en la VPC)**  
@@ -149,7 +135,7 @@ Laptop → SSH → Bastion (Prod, público)
           Dev     Shared
 ```
 
-## Subnets públicas vs privadas (criterio)
+## Subnets públicas vs privadas
 - Para TGW **da igual** técnicamente.
 - Para “diseño limpio”:
   - Bastion en subnet **pública** (IGW + IP pública)
@@ -178,14 +164,14 @@ Ejemplo:
   - `10.0.0.0/16 → TGW`
   - `10.1.0.0/16 → TGW`
 
-### 3) TGW route table (modo simple)
+### 3) TGW route table 
 En Lab 2, lo más simple es:
 - **una sola** TGW route table
 - todos los attachments asociados + propagando
 
 Resultado: **any ↔ any** (a nivel de routing).
 
-### 4) Bastion / Jump host (cómo lo usaste)
+### 4) Bastion / Jump host 
 - Te conectas desde el portátil al bastion por su **IP pública**.
 - Desde bastion, accedes a Dev/Shared por **IP privada**.
 - Desde dentro de AWS, usar IP pública para saltos internos suele fallar (intenta “salir a internet”).
@@ -194,7 +180,7 @@ Resultado: **any ↔ any** (a nivel de routing).
 - **Desde fuera** → IP pública (bastion).
 - **Desde dentro** → IP privada (cualquier VPC).
 
-### 5) SGs recomendados (lab)
+### 5) SGs recomendados 
 **Bastion (Prod)**
 - Inbound: SSH desde tu IP pública (o temporalmente 0.0.0.0/0 en lab).
 - Outbound: allow all.
@@ -263,7 +249,7 @@ Si Shared solo puede estar asociado a 1 RT-TGW, y quieres:
 
 Entonces Shared necesita “su” tabla (RT-Shared) que conozca ambos, mientras Dev y Prod entran por tablas que **no** se conozcan entre sí.
 
-## Diseño final (recomendado)
+## Diseño final 
 
 ### TGW Route Tables
 - **RT-Prod**: tabla de entrada para Prod
@@ -333,7 +319,7 @@ Haz pings por IP privada:
 
 ---
 
-## Costes y limpieza (para no pagar de más)
+## Costes y limpieza
 
 ### Qué conservar para seguir estudiando
 - VPCs, subnets, route tables, SGs: normalmente coste 0.
