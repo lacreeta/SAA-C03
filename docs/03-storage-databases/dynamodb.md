@@ -152,3 +152,6 @@ Para apps globales con baja latencia:
 - DAX acelera lecturas
 - Streams para eventos
 - Global Tables para multi-región
+
+## Laboratorio
+👉 [DynamoDB — Laboratorio](dynamodb-labs.md)

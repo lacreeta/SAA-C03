@@ -164,3 +164,6 @@ RDS permite configurar:
 - **Backups automáticos**: PITR.
 - **Snapshots**: copia puntual.
 - **Seguridad**: subnet privada + SG + KMS.
+
+## Laboratorio
+👉 [RDS — Laboratorio](rds-lab.md)
