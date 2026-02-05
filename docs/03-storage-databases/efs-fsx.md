@@ -119,3 +119,6 @@ File system basado en **OpenZFS**, útil para compatibilidad/migración desde ZF
 - **FSx Windows**: SMB para Windows.
 - **FSx Lustre**: HPC, ultra rendimiento.
 - **FSx ONTAP/OpenZFS**: enterprise/migración.
+
+## Laboratorio (solo EFS)
+👉 [EFS — Laboratorio](efs-lab.md)

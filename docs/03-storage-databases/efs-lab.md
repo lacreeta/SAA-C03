@@ -91,6 +91,3 @@ cat /mnt/efs/test.txt
 
 EFS es la solución correcta para filesystem compartido en Linux multi-AZ.
 
-
-## Laboratorio (solo EFS)
-👉 [EFS — Laboratorio](efs-lab.md)
