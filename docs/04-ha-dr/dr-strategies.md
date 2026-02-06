@@ -96,3 +96,6 @@
 - RPO/RTO definen la estrategia
 - Backup & Restore (barato)
 - Active-Active (caro, rápido)
+
+## Laboratorio
+👉 [Disaster Recovery — Laboratorio](rd-labs.md)
