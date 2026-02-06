@@ -147,15 +147,21 @@ nav:
       - SNS: 05-serverless-integration/sns.md
       - EventBridge: 05-serverless-integration/eventbridge.md
       - Step Functions: 05-serverless-integration/step-functions.md
+      - Serverless Exam: 05-serverless-integration/serverless-exam.md
 
   - Security:
       - Shared Responsibility: 06-security/shared-responsibility.md
-      - KMS: 06-security/kms.md
       - Arquitectura Segura: 06-security/security-architecture.md
+      - IAM (Security): 06-security/iam-security.md
+      - KMS (Encryption): 06-security/kms.md
+      - Secrets Manager & SSM: 06-security/secrets-manager-ssm.md
+      - WAF & Shield: 06-security/waf-shield.md
+      - Config, GuardDuty & Macie: 06-security/config-guardduty-macie.md
 
   - Operations:
       - CloudWatch: 07-operations/cloudwatch.md
       - CloudFormation: 07-operations/cloudformation.md
+      - CloudTrail: 07-operations/cloudtrail.md
       - Systems Manager: 07-operations/systems-manager.md
 
   - Examen:
