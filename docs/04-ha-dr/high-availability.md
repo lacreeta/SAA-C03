@@ -112,3 +112,7 @@ Alta disponibilidad significa:
 - ELB + ASG = base
 - Bases de datos con replicación
 - Stateless > stateful
+
+
+## Laboratorio
+👉 [High Availability — Laboratorio](ha-lab.md)
