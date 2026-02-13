@@ -314,3 +314,6 @@ Muestra:
 ## Cierre
 Si entiendes Systems Manager, muchas preguntas de **operations + security**
 se vuelven obvias: menos acceso directo, más automatización y más control.
+
+## Laboratorio
+👉 [Operations — Laboratorio](operations-lab.md)

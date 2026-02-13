@@ -376,3 +376,6 @@ CloudFormation en SAA‑C03 es menos “escribir YAML” y más:
 - **arquitectura modular**
 - **evitar errores manuales**
 - **gobernanza y compliance**
+
+## Laboratorio
+👉 [Operations — Laboratorio](operations-lab.md)

@@ -324,3 +324,7 @@ SNS Topic → múltiples SQS → cada consumer procesa a su ritmo
 5. Workflows → **Step Functions**  
 6. Orden estricto → **SQS FIFO**  
 7. Lambda máx 15 min, stateless
+
+
+## Laboratorio
+👉 [Serverless — Laboratorio](serverless-lab.md)

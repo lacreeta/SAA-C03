@@ -287,3 +287,6 @@ No suele entrar en detalle en SAA.
 ## Cierre
 Si entiendes bien KMS, **muchas preguntas de cifrado se responden solas**.
 No memorices opciones: **razona control, acceso y compliance**.
+
+## Laboratorio
+👉 [Security — Laboratorio](security-lab.md)

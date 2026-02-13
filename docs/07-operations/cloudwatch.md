@@ -361,3 +361,6 @@ ALB → EC2 / ECS / Lambda
 ## Cierre
 Si entiendes CloudWatch como **el sistema nervioso de AWS**,  
 muchas preguntas de operación, escalado y seguridad se vuelven triviales.
+
+## Laboratorio
+👉 [Operations — Laboratorio](operations-lab.md)

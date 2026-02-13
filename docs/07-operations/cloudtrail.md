@@ -251,3 +251,6 @@ Un trail puede ser:
 ## Cierre
 Si entiendes CloudTrail como **la caja negra de AWS**,  
 las preguntas de auditoría y seguridad se vuelven obvias.
+
+## Laboratorio
+👉 [Operations — Laboratorio](operations-lab.md)

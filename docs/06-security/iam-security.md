@@ -354,3 +354,6 @@ Si entiendes IAM, **la mitad de las preguntas de seguridad se vuelven obvias**.
 No memorices JSON: **razona escenarios**.
 
 Este fichero, bien entendido, te da una **ventaja enorme** en SAA‑C03.
+
+## Laboratorio
+👉 [Security — Laboratorio](security-lab.md)

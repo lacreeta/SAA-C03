@@ -296,3 +296,6 @@ son el **lugar correcto para guardar secretos**.
 
 Si sabes diferenciar **secreto crítico** vs **configuración sensible**,  
 la respuesta correcta en el examen suele ser inmediata.
+
+## Laboratorio
+👉 [Security — Laboratorio](security-lab.md)
